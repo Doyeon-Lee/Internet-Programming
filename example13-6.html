@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Page Title</title>
+</head>
+<body>
+	<script type="text/javascript">
+		//Checking the scope of the variables defined in the function test
+	
+		test()
+		if(typeof a != 'undefined') document.write('a="' + a + '"<br>');
+		if(typeof b != 'undefined') document.write('b="' + b + '"<br>');
+		if(typeof c != 'undefined') document.write('c="' + c + '"<br>');
+		
+		function test(){
+			a 	  = 123	//Global scope
+			var b = 456	//Local scope
+			if(a === 123) var c = 789 //Local scope
+		}
+	</script>
+</body>
+</html>
