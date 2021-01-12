@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Page Title</title>
+</head>
+<body>
+	<script>
+		numbers = [];
+		
+		for(i = 1;i < 6;++i){
+			if(i == 2 || i == 5)
+				document.write("Processing 'todo' #" + i + "<br>");
+			else{
+				document.write("Putting off 'todo' #" + i + "until later<br>");
+				numbers.push(i);
+			}
+		}
+		
+		document.write("<br>Finished processing the priority tasks.")
+		document.write("<br>Commencing stored tasks, most recent first.<br><br>")
+		document.write("Now processing 'todo' #" + numbers.pop() + "<br>")
+		document.write("Now processing 'todo' #" + numbers.pop() + "<br>")
+		document.write("Now processing 'todo' #" + numbers.pop() + "<br>")
+	</script>
+</body>
+</html>

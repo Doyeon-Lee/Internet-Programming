@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Page Title</title>
+</head>
+<body>
+	<script>
+		checkerboard = Array(
+		Array(' ', 'o', ' ', 'o', ' ', 'o', ' ', 'o'),
+		Array('o', ' ', 'o', ' ', 'o', ' ', 'o', ' '),
+		Array(' ', 'o', ' ', 'o', ' ', 'o', ' ', 'o'),
+		Array(' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '),
+		Array(' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '),
+		Array('O', ' ', 'O', ' ', 'O', ' ', 'O', ' '),
+		Array(' ', 'O', ' ', 'O', ' ', 'O', ' ', 'O'),
+		Array('O', ' ', 'O', ' ', 'O', ' ', 'O', ' '));
+		
+		document.write("<pre>");
+		
+		for(i = 0;i < 8;++i){
+			for(j = 0;j < 8;++j)
+				document.write(checkerboard[i][j] + " ");
+	
+			document.write("<br>");
+		}
+		document.write("</pre>");
+	</script>
+</body>
+</html>

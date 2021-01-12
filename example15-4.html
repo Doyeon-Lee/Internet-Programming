@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Page Title</title>
+</head>
+<body>
+	<script>
+		words = fixNames("the", "DALLAS", "CowBoys");
+		
+		for(i = 0;i < words.length;++i)
+			document.write(words[i]+"<br>");
+			
+		function fixNames(){
+			var s = new Array();
+			
+			for(i = 0;i < fixNames.arguments.length;++i)
+				s[i] = fixNames.arguments[i].charAt(0).toUpperCase() + 
+					   fixNames.arguments[i].substr(1).toLowerCase();
+					   
+			return s;
+		}
+	</script>
+</body>
+</html>

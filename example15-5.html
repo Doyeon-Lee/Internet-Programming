@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Page Title</title>
+</head>
+<body>
+	<script>
+		//Declaring the User class and its method
+		function User(forename, username, password){
+			this.forename = forename;
+			this.username = username;
+			this.password = password;
+			
+			this.showUser = function(){
+				document.write("Forename: " + this.forename + "<br>");
+				document.write("username: " + this.username + "<br>");
+				document.write("password: " + this.password + "<br>");
+			}
+		}
+	</script>
+</body>
+</html>
